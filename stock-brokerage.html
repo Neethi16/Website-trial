@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MLG MIRLE</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="https://mlgmirle.com/wp-content/uploads/2020/08/mlg-mirle.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="About.html"> About Us </a></li>
+                    <li> <a href="Services.html"> Services </a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="loan-agency.html"> Loan Agency</a></li>
+                            <li><a href="stock-brokerage.html"> Stock Brokerage</a></li>
+                            <li><a href="stock-market-training.html"> Stock Marketing Training</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li> <a href="Contact.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+       <h1>Stock Brokerage</h1>
+    </section>
+    
+    <!--Javascript for toggle menu-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+    <!------Stock Brokerage-------->
+    <section class="sub-service">
+        <div class="row">
+            <div class="subser-col">
+                <img src="images/stock-brokerage.jpg">
+            </div>
+            <div class="subser-col">
+                <h1>Stock Brokerage</h1>
+                <p>                    
+                    Invest and trade globally at your convenience. We offer a host of advanced platforms that enable a 
+                    simple, speedy and secure stock trading experience. Our services are now available online,  We use 
+                    the stock trading tools for high class performance. We provide our broking services through various 
+                    web, digital and exe platforms.<br><br>
+
+                    <strong>Real-time rate update</strong>: If you are trading on stock market desktop, you will not miss any chance of 
+                    making a good investment. The market is at your fingertips as we offer you live streaming of rates 
+                    so you can trade in an instant.<br>
+
+                    <strong>Portfolio</strong> : Monitor all your investments at once with our stocks desktop. View scrip-wise buy price, 
+                    day’s gain and loss and overall profit and loss of your investments with a simple click.<br>
+
+                    <strong>Integrated news flash and reports </strong>: Don’t miss an opportunity to make more money.
+                    For stock market gives you integrated news flash and reports. 
+                    Analyse these reports to make an informed investment.<br>
+
+                    <strong>Live market watch </strong>: You can watch and update live market data in Excel format. 
+                    Get charts on the latest trends. Tweak charts according to your indicators.
+                    Take instant decisions on trading.
+                </p>
+            </div>
+        </div>
+    </section>
+
+   
+    <!--footer-->
+    <section class="footer">
+
+        <div class="foot-row">
+            <div class="foot-col">
+            <h4>About Us</h4><br>
+            <p>We are a finance company, you can apply for a loan, <br>
+                trade the stocks and learn more about the stock <br>
+                market throughout the training program.</p>
+            </div>
+
+            <div class="foot-col">
+                <h4>Contact Us</h4><br>		
+                    <div><p>MLG TECHNOLOGIES PVT LTD<br />
+                    (MLG MIRLE)<br />
+                    #6, Manganahalli Cross, Ullal,<br />
+                    Bengaluru – 560056<br />
+                    Phone: +91 93531 88123,<br />
+                    +91 95353 37626</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+            
+            </div>
+        </div>
+                 
+        <div class="copy-footer"> 
+            <p> Copyright 2021 © <strong>MLG MIRLE</strong></p></div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!--javascript for scroll button-->
+    <script>
+        var myBtn=document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() 
+        {
+            if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() 
+        {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }     
+    </script>
+
+
+</body>
+</html>
